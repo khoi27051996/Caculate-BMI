@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chỉ Số BMI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="carousel">
+                <div class="row">
+                    <div class="col-lg-6 left">
+                        <h1>TÍNH CHỈ SỐ BMI</h1>
+                        <p>Giải thích chỉ số khối cơ thể BMI
+                            BMI dưới 18,5 là nhẹ cân, từ 23 – 24,9 là thừa cân và từ 25 trở lên là béo phì. Còn chỉ số
+                            BMI theo phân loại quốc tế (WHO) thì dưới 18,5 là nhẹ cân, 18,5-24,9 là bình thường, 25-29,9
+                            là thừa cân và từ 30 trở lên là béo phì.</p>
+                        <input id="heightInput" type="text" placeholder="Nhập Chiều Cao (CM)">
+                        <br>
+                        <input id="weightInput" type="text" placeholder="Nhập Cân Nặng (KG)">
+                        <br>
+                        <button id="calBMI">Tính BMI</button>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-5 animate__animated animate__bounceIn" id="ketQua">
+                        <div class="img">
+                            <img id="imgOutput" class="img-fluid" src="./img/undraw_personal_training_0dqn.svg"
+                                alt="Bg">
+                        </div>
+                        <div class="text-center resulut" style="color: white;">
+                            <p id="show"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: blueviolet;
+    height: 100vh;
+}
+.carousel {
+    max-width: 750px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.208);
+}
+.left input {
+    width: 100%;
+    outline: none;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border:  1px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.208);
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    color: white;
+    transition: all .5s;
+}
+.left input:hover{
+    border-color: plum;
+}
+.left h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2;
+}
+.left button {
+    margin-top: 10px;
+    padding: 10px 35px;
+    border: 1px solid white;
+    background: linear-gradient(111.29deg, rgba(255, 255, 255, 0.53) -1.83%, rgba(255, 255, 255, 0) 109.95%);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.left button:hover {
+    border-color: plum;
+}
+.img {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.resulut {
+    font-size: 30px;
+}
+@media screen and (max-width: 992px) {
+    .carousel {
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .carousel {
+        max-width: 90%;
+    }
+    .resulut {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .carousel {
+        max-width: 80%;
+    }
+    .resulut {
+        font-size: 16px;
+    }
+}
